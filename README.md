@@ -42,13 +42,11 @@ projetoPA/
 ```
 
 
-### 📘 Saiba mais
-🧑‍💻 Desenvolvido por:
+### 🧑‍💻 Desenvolvido por:
 - Juan
 - Julya
-- Matheus Opuscolo -> github.com
-- Nayara Dellamura ->
-github.com/nayaradellamura
+- Matheus Opuscolo 
+- Nayara Dellamura
 - Railson
 
 
