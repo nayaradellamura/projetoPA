@@ -45,7 +45,7 @@ projetoPA/
 ### 📘 Saiba mais
 🧑‍💻 Desenvolvido por:
 - Juan
-- Julia
+- Julya
 - Matheus Opuscolo -> github.com
 - Nayara Dellamura ->
 github.com/nayaradellamura
