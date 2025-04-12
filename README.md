@@ -25,22 +25,6 @@ npm start
 O app será iniciado em modo de desenvolvimento.
 Abra http://localhost:3000 no navegador para visualizar.
 
-### 📂 Estrutura do Projeto
-```bash
-projetoPA/
-├── public/           # Arquivos estáticos
-├── src/              # Código-fonte principal
-│   ├── assets/       # Imagens, fontes, ícones, etc.
-│   ├── components/   # Componentes reutilizáveis
-│   ├── pages/        # Páginas principais do app
-│   ├── services/     # Serviços e chamadas de API
-│   ├── styles/       # Estilos globais
-│   ├── utils/        # Funções utilitárias
-│   └── App.js        # Componente raiz
-├── package.json      # Dependências e scripts
-└── README.md         # Documentação
-```
-
 
 ### 🧑‍💻 Desenvolvido por:
 - Juan
