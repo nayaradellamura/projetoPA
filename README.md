@@ -1,9 +1,11 @@
+---
 # ⚡🌞  Marketplace  de Energia Solar
 
 Plataforma online que conecta geradores e consumidores de energia no mercado brasileiro, promovendo o acesso a fontes renováveis e o consumo consciente.
+<br>
 
 Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
-
+<br><br>
 
 #### Objetivos:
 - Facilitar a interação entre geradores e compradores no mercado livre de energia.
