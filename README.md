@@ -44,12 +44,12 @@ Abra http://localhost:3000 no navegador para visualizar.
   
 ### 🧑‍💻 Desenvolvido por:
 
-- Juan Salazar - 116133
-- Julya de Lima Tochio - 115406
-- José Ricardo Toledo - 115771
-- Matheus Opuscolo - 114449
-- Nayara Dellamura - 115374
-- Railson de Sousa Andrade - 82356
+- 116133 - Juan Salazar
+- 115406 - Julya de Lima Tochio 
+- 115771 - José Ricardo Toledo
+- 114449 - Matheus Opuscolo
+- 115374 - Nayara Dellamura
+- 82356  - Railson de Sousa Andrade
 
 
 
