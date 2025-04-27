@@ -42,7 +42,7 @@ export default function Home() {
             maxWidth: 600,
           }}
         >
-          O seu portal de ofertas e oportunidades. Conecte-se e aproveite!
+         vai mudar essa tela ainda :)
         </Typography>
 
         <Button
