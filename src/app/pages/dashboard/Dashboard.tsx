@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom"
+import React from 'react';
 
-export default function Dashboard(){
-    return (
-        <div>
-             <p>Dashboard</p>
-             <Link to="/login">Login</Link>
-        </div>
-       
-    )
+export default function Dashboard() {
+  return (
+    <>
+     
+    </>
+  );
 }

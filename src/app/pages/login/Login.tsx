@@ -5,7 +5,7 @@ import logo from "../../../assets/img/logo.png";
 export default function Login() {
   return (
     <>
-      <CssBaseline /> {/* reset de CSS automático do Material UI */}
+      <CssBaseline />
 
       <Box
         sx={{
