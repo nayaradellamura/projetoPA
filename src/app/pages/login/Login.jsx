@@ -1,22 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, TextField, Button, Typography, Link, CssBaseline } from '@mui/material';
 import logo from "../../../assets/img/logo.png";
 
 export default function Login() {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+
+  const [errors, setErrors] = useState({
+    email: '',
+    password: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+    setErrors(prev => ({
+      ...prev,
+      [name]: '', 
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!formData.email || !formData.password) {
+      setErrors({
+        email: formData.email ? '' : 'Email é obrigatório',
+        password: formData.password ? '' : 'Senha é obrigatória',
+      });
+      return;
+    }
+    //  autenticação aqui
+  };
+
   return (
     <>
       <CssBaseline />
-
       <Box
         sx={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          minHeight: '100vh', 
+          minHeight: '100vh',
           backgroundColor: '#f5f5f5',
           margin: 0,
           padding: 0,
-          overflow: 'hidden', 
+          overflow: 'hidden',
         }}
       >
         <Box
@@ -41,8 +74,8 @@ export default function Login() {
           />
           <Typography
             variant="h5"
-            fontWeight="bold"
             sx={{
+              fontWeight: 700,
               mb: 2,
               fontSize: '1.25rem',
               color: '#1d4fa4',
@@ -53,6 +86,7 @@ export default function Login() {
 
           <Box
             component="form"
+            onSubmit={handleSubmit}
             sx={{
               width: '100%',
               display: 'flex',
@@ -64,22 +98,33 @@ export default function Login() {
               fullWidth
               label="Email"
               variant="outlined"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
               sx={{
                 backgroundColor: '#f7f7f7',
                 borderRadius: 2,
               }}
+              error={!!errors.email}
+              helperText={errors.email}
             />
             <TextField
               fullWidth
               label="Senha"
               type="password"
               variant="outlined"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
               sx={{
                 backgroundColor: '#f7f7f7',
                 borderRadius: 2,
               }}
+              error={!!errors.password}
+              helperText={errors.password}
             />
             <Button
+              type="submit"
               variant="contained"
               fullWidth
               sx={{
